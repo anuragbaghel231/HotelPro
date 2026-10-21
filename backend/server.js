@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const path = require('path');
+const mongoose = require('mongoose');
 const connectDB = require('./config/db');
 
 // Route imports
@@ -37,8 +38,10 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {
+  const dbStatus = mongoose.connection.readyState === 1 ? 'connected' : 'disconnected';
   res.status(200).json({
     status: 'healthy',
+    database: dbStatus,
     timestamp: new Date().toISOString(),
     service: 'HotelPro API'
   });
@@ -123,7 +126,7 @@ const startServer = async () => {
       console.log(`[HotelPro API] Base API URL: http://localhost:${PORT}/api`);
     });
   } catch (error) {
-    console.error(`[HotelPro API] Failed to bootstrap server:`, error);
+    console.error(`[HotelPro API] Server startup aborted: Database connection must be established before accepting requests.`);
     process.exit(1);
   }
 };
