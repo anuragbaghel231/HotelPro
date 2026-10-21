@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # HotelPro — Full-Stack Hotel Management & Luxury Room Booking System
 
 HotelPro is an enterprise-grade, responsive full-stack MERN (MongoDB, Express, React, Node.js) web application designed for luxury hospitality management and room reservations. It delivers a modern, high-conversion guest experience alongside a robust administrative management portal.
@@ -332,3 +333,7 @@ npm test
 - **Upload Hardening:** Multer checks file size (< 5MB), limits file count (< 8), validates MIME types against an explicit whitelist (`image/jpeg`, `image/png`, `image/webp`), and assigns cryptographic timestamps.
 - **Concurrency Protection:** In-flight room reservation requests employ mutex locking to prevent race conditions during booking creation.
 - **Database Safety:** Safe deletion guards prevent administrators from deleting rooms with existing reservation history, preserving financial audit trails.
+=======
+# HotelPro
+SmartBridge project
+>>>>>>> 48f35323f4614db42e2f830f68604ec98ec78027
