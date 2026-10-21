@@ -94,7 +94,7 @@ const checkout = async (req, res) => {
       booking: booking._id,
       user: req.user._id,
       amount: booking.totalAmount,
-      currency: 'USD',
+      currency: 'INR',
       provider: 'HotelPro Payment Sandbox',
       transactionId,
       paymentMethod: 'Sandbox Simulated Card',

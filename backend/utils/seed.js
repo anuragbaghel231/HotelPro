@@ -50,7 +50,7 @@ const seedData = async () => {
         roomNumber: '101',
         name: 'Grand Executive Solo Suite',
         type: 'Single',
-        pricePerNight: 135,
+        pricePerNight: 3500,
         capacity: 1,
         description:
           'Elegantly crafted for discerning solo travelers and business executives. Features an ergonomic workspace, plush queen-single bedding, marble rainfall shower, and high-speed fiber internet.',
@@ -72,7 +72,7 @@ const seedData = async () => {
         roomNumber: '201',
         name: 'Deluxe Courtyard King',
         type: 'Double',
-        pricePerNight: 195,
+        pricePerNight: 5500,
         capacity: 2,
         description:
           'A tranquil retreat boasting expansive courtyard views. Includes a custom pillow-top King bed, private balcony, walk-in vanity, and complimentary evening turndown service.',
@@ -94,7 +94,7 @@ const seedData = async () => {
         roomNumber: '301',
         name: 'Oceanfront Azure Deluxe',
         type: 'Deluxe',
-        pricePerNight: 285,
+        pricePerNight: 8500,
         capacity: 2,
         description:
           'Unrivaled direct ocean panoramas with floor-to-ceiling soundproof glass. Unwind in a standalone whirlpool soaking tub overlooking azure waves and coastal sunsets.',
@@ -116,7 +116,7 @@ const seedData = async () => {
         roomNumber: '401',
         name: 'The Royal Ambassador Penthouse Suite',
         type: 'Suite',
-        pricePerNight: 490,
+        pricePerNight: 18000,
         capacity: 4,
         description:
           'The epitome of luxury hospitality. Spans over 1,400 sq.ft featuring a sprawling private terrace, separate dining parlor, walk-in dressing room, private dry sauna, and dedicated butler concierge.',
@@ -138,7 +138,7 @@ const seedData = async () => {
         roomNumber: '501',
         name: 'Signature Family Garden Residence',
         type: 'Family',
-        pricePerNight: 340,
+        pricePerNight: 12000,
         capacity: 5,
         description:
           'Spacious, family-first sanctuary configured with two adjoining suites, a full children bunk lounge, custom play alcove, kitchen pantry, and child-safe private garden patio.',
@@ -160,7 +160,7 @@ const seedData = async () => {
         roomNumber: '302',
         name: 'Sunset Horizon Deluxe Terrace',
         type: 'Deluxe',
-        pricePerNight: 310,
+        pricePerNight: 9500,
         capacity: 3,
         description:
           'Perched on the upper tier with west-facing terrace views. Features a plush King bed plus designer daybed, curated art collection, and complimentary twilight cocktails.',
@@ -209,7 +209,7 @@ const seedData = async () => {
       booking: sampleBooking._id,
       user: customerUser._id,
       amount: totalAmount,
-      currency: 'USD',
+      currency: 'INR',
       provider: 'HotelPro Payment Sandbox',
       transactionId: 'TXN-HP-SEED-001',
       paymentMethod: 'Sandbox Simulated Card',
